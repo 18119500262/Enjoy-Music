@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  Enjoy Music
+//
+//  Created by qianfeng on 16/4/5.
+//  Copyright © 2016年 qianfeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define COLOR(_r,_g,_b,_a)  [UIColor colorWithRed:_r/255.f green:_g/255.f blue:_b/255.f alpha:_a]
+#define UIColorRGB(_r,_g,_b)  COLOR(_r,_g,_b,1)
+
+#define SCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "Auxiliary.h"
+
+//抽屉
+#import "RESideMenu.h"
+
+#define SRC_W self.view.frame.size.width
+#define SRC_H self.view.frame.size.height
+
+// 友盟
+#define UMENGAPPKEY @"57079e9667e58ecce9000453"
+//Bmob云应用秘钥
+#define SDKKEY @"8e5b642e3ee1add434ca5c8b698581d0"
+#import <BmobSDK/Bmob.h>
+
+#import "Header.h"
+
+#endif /* PrefixHeader_pch */
